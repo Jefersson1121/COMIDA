@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<header>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL CHOCO Y SUS COMIDAS</title>
+  <link rel ="icon"  href="ICONO.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel ="icon"  href="ICONO.jpg">
+  
+</header>
+<body>
+    
+  <header>
+    <h1>COMIDAS & BEBIDAS TIPICAS DEL CHOCO</h1>
+    <nav>
+      <ul>
+        <li><img src="ICONO.jpg" width="100PX"></li>
+        <li><a href="#COMIDAS">COMIDAS TIPICAS</a></li>
+        <li><a href="#bebidas">BEBIDAS TIPICAS</a></li>
+        <li><a href="#DULCESTIPUICOS">DULCES TIPICOS</a></li>
+        <li><a href="#frutas">FRUTAS TIPICAS</a></li>
+        <li><a href="#contacto">CONTACTANOS </a></li>
+        <li><a href="../index.html" class="btn">← Volver al Inicio</a></li>
+        <li><a><button id="ver-carrito">🛒 Ver Carrito (<span id="contador">0</span>)</button></a></li>
+      </ul>
+      <div id="carrito" class="">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h2>🛒 Carrito</h2>
+          <button id="cerrar-carrito">❌</button>
+        </div>
+        <button id="toggle-lista">⏬ Ocultar productos</button>
+        <ul id="lista-carrito"></ul>
+        <p>Total: <span id="total">$0</span></p>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Categoría: COMIDAS TIPICAS -->
+    <section class="categoria" id="COMIDAS">
+      <h2>COMIDAS TIPICAS</h2>
+      <div class="productos" data-id="1" data-nombre="arrozconcamaron" data-precio="45000">
+            <div class="producto">
+                <img src="arrozconcamaron.jpg" alt="arrozconcamaron">
+                <h3>ARROZ CON CAMARON</h3>
+                <p>$45.000 PESOS</p>
+                <button class="agregar-carrito">Agregar</button>
+            </div>
+                <div class="producto" data-id="2" data-nombre="arrozconlonganiza" data-precio="49000">
+                <img src="arrozconlonganiza.jpg" alt="arrozconlonganiza">
+                <h3>ARROZ CON LONGANIZA</h3>
+                <p>$49.000 PESOS</p>
+                <button class="agregar-carrito">Agregar</button>
+            </div>
+            <div class="producto" data-id="3" data-nombre="arrozdecoco" data-precio="35000">
+                <img src="arrozdecoco.jpg" alt="arrozdecoco">
+                <h3>ARROS DE COCO</h3>
+                <p>$35.000 PESOS</p>
+                <button class="agregar-carrito">Agregar</button>
+            </div>
+            <div class="producto" data-id="4" data-nombre="casuela" data-precio="38000">
+                <img src="casuela.jpg" alt="CASUELA">
+                <h3>CASUELA</h3>
+                <p>$38.000 PESOS</p>
+                <button class="agregar-carrito">Agregar</button>
+            </div>
+            <div class="producto" data-id="5" data-nombre="cevichecamaron" data-precio="28000">
+                <img src="cevichecamaron.jpg" alt="cevichecamaron">
+                <h3>CEVICHE DE CAMARON</h3>
+                <p>$28.000 PESOS</p>
+                <button class="agregar-carrito">Agregar</button>
+            </div>
+            <div class="producto" data-id="6" data-nombre="sancochopescado" data-precio="32000">
+                <img src="sancochopescado.jpg" alt="sancochopescado">
+                <h3>SANCOCHO DE PESCADO</h3>
+                <p>$32.000 PESOS</p>
+                <button class="agregar-carrito">Agregar</button>
+            </div>
+            <div class="producto" data-id="7" data-nombre="pastelpacifico" data-precio="20000">
+                <img src="pastelpacifico.jpg" alt="pastelpacifico">
+                <h3>PASTEL DE CERDO</h3>
+                <p>$20.000 PESOS</p>
+                <button class="agregar-carrito">Agregar</button>
+            </div>
+            <div class="producto"  data-id="8" data-nombre="pastelpacifico" data-precio="20000">
+                <img src="pastelpacifico.jpg" alt="pastelpacifico">
+                <h3>PASTEL DE POLLO</h3>
+                <p>$20.000 PESOS</p>
+                <button class="agregar-carrito">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="categoria" id="bebidas">
+      <h2>BEBIDAS</h2>
+      <div class="productos">
+        <div class="producto" data-id="1" data-nombre="jugodeborojo" data-precio="8000">
+          <img src="jugodeborojo.jpg" alt="JUGO DE BOROJO ">
+          <h3>JUGO DE BOROJO</h3>
+          <p>$8.000 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="jugodecaiomito" data-precio="9000">
+          <img src="jugodecaiomito.jpg" alt="CAIMITO">
+          <h3>JUGO DE CAIMITO</h3>
+          <p>$9.000 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="jugodelulo" data-precio="7500">
+          <img src="jugodelulo.jpg" alt="LULO">
+          <h3>JUGO DE LULO</h3>
+          <p>$7.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="tomaseca" data-precio="20000">
+            <img src="tomaseca.jpg" alt="TOMASECA">
+            <h3>BEBIDA TOMASECA</h3>
+            <p>$20.000 PESOS</p>
+            <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="viche" data-precio="15000">
+            <img src="viche.jpg" alt="VICHE">
+            <h3>BEBIDA DE VICHE</h3>
+            <p>$15.000 PESOS</p>
+            <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="arrechon" data-precio="18000">
+            <img src="arrechon.jpg" alt="ARRECHON">
+            <h3>BEBIDA ARRECHON</h3>
+            <p>$18.000 PESOS</p>
+            <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="curado" data-precio="13000">
+            <img src="curado.jpg" alt="CUERADO">
+            <h3>BEBIDA CURADO</h3>
+            <p>$13.000 PESOS</p>
+            <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="chichadechontaduro" data-precio="6000">
+            <img src="chichadechontaduro.jpg" alt="CHICHADECHONTADURO">
+            <h3>CHICHA DE CHONTADURO</h3>
+            <p>$6.000 PESOS</p>
+            <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="jugodelulo" data-precio="7500">
+            <img src="jugodelulo.jpg" alt="LULO">
+            <h3>JUGO DE LULO</h3>
+            <p>$7.500 PESOS</p>
+            <button class="agregar-carrito">Agregar</button>
+        </div>
+        <!-- Agrega hasta 20 productos -->
+      </div>
+    </section>
+    <!-- Categoría: Frutas -->
+    <section class="categoria" id="frutas">
+      <h2>Frutas</h2>
+      <div class="productos">
+        <div class="producto" data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="CARAMBOLO.jpg" alt="CARAMBOLO">
+          <h3>CARAMBOLO</h3>
+          <p>$3.000 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="CHONTADURO.jpg" alt="CGONTADURO">
+          <h3>CHONTADURO</h3>
+          <p>$10.000 PESOS (KL)</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="CAIMITO.jpg" alt="CAIMITO">
+          <h3>CAIMITO</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="CAIMITO.jpg" alt="CAIMITO">
+          <h3>CAIMITO</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="BOROJO.jpg" alt="BOROJO">
+          <h3>BOROJO</h3>
+          <p>$3.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="BANANO.jpg" alt="BANANO">
+          <h3>BANANO</h3>
+          <p>$500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="BADEA.jpg" alt="BADEA">
+          <h3>BADEA</h3>
+          <p>$3.500 PESOS (UN)</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="PIÑA.jpg" alt="PIÑA">
+          <h3>PIÑA</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="CACAO.jfif" alt="CACAO">
+          <h3>CACAO</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="CACAO2.jfif" alt="CACAO">
+          <h3>CACAO</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="MILPESOS.jfif" alt="MILPESOS">
+          <h3>MILPESOS</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="ALMIRAJO.jfif" alt="ALMIRAJO">
+          <h3>ALMIRAJO</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="ELCOCO.jfif" alt="ELCOCO">
+          <h3>COCO</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="GUAMA.jfif" alt="GUAMA">
+          <h3>GUAMA</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="CAÑA.jfif" alt="CAÑA">
+          <h3>CAÑA</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto"  data-id="1" data-nombre="CARAMBOLO" data-precio="3000">
+          <img src="ALMIRAJO2.jfif" alt="ALMIRAJO2">
+          <h3>ALMIRAJO</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+
+      </div>
+    </section>
+    <!-- Categoría: Panadería -->
+    <section class="categoria" id="DULCESTIPUICOS">
+      <h2>DULCES TIPICOS</h2>
+      <div class="productos">
+        <div class="producto" data-id="1" data-nombre="cocadas" data-precio="3000">
+          <img src="cocadas.jpg" alt="COCADAS">
+          <h3>COCADAS</h3>
+          <p>$3.000 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="cocadas-asadas" data-precio="4000">
+          <img src="cocadasasadas.jpg" alt="COCDAAS-ASADAS">
+          <h3>COCADAS-ASADAS</h3>
+          <p>$4.000 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="CUCAS" data-precio="3500">
+          <img src="cucas.jpg" alt="CUCAS">
+          <h3>CUCAS</h3>
+          <p>$3.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="DULCE-DE-BOROJO" data-precio="4500">
+          <img src="dulcedeborojo.jfif" alt="DULCE-DE-BOROJO">
+          <h3>DULCE-DE-BOROJO</h3>
+          <p>$4.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <div class="producto" data-id="1" data-nombre="ADULCE-DE-PAPAYA" data-precio="5500">
+          <img src="dulcedepapaya.jfif" alt="dulcedepapaya">
+          <h3>DULCE-DE-PAPAYA</h3>
+          <p>$5.500 PESOS</p>
+          <button class="agregar-carrito">Agregar</button>
+        </div>
+        <!-- Agrega hasta 20 productos -->
+      </div>
+    </section>
+
+  </main>
+  
+    <footer class="footer" id="Contacto">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Autoservicio Central</h3>
+          <p>Tu tienda de confianza en Lloró. Calidad y servicio para tu hogar.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces útiles</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contáctanos</h4>
+          <p>📍 Calle Principal #123, Lloró</p>
+          <p>📞 +57 312 778 7868</p>
+          <p>✉️contacto@autoserviciocentral.com</p>
+        </div>
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/573127787868" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Autoservicio Central. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
+/////////////////////////////////////
+body {
+    font-family: 'Poppins', sans-serif; /* Se define la familia de fuente, usando 'Poppins' y una fuente de reserva sans-serif */
+    margin: 0; /* Se elimina el margen predeterminado del body */
+    padding: 0; /* Se elimina el padding predeterminado del body */
+    box-sizing: border-box; /* Se configura el box-sizing para incluir el padding y el borde en el cálculo del ancho */
+    background: #f8f9fa; /* Se define el color de fondo del body */
+    
+}
+  /* El header se estiliza para tener un fondo naranja y texto centrado */
+header {
+    background: #808080; /* Se establece el color de fondo del header */
+    color: white; /* Se define el color del texto dentro del header */
+    text-align: center; /* Se centra el texto horizontalmente en el header */
+    padding: 2px; /* Se agrega padding interno al header */
+     /* Se define el tamaño de fuente del header */
+}
+  /* Se configura el menú de navegación (ul dentro de nav) */
+nav ul {
+    list-style: none; /* Se eliminan las viñetas de la lista */
+    display: flex; /* Se establece el contenedor como flexible */
+     /* Se permite que los elementos se envuelvan en múltiples líneas si es necesario */
+    justify-content: center; /* Se centra horizontalmente el contenido de la lista */
+    padding: 0; /* Se elimina el padding predeterminado de la lista */
+    background: rgb(26, 24, 24); /* Se define el color de fondo del menú de navegación */
+}
+  /* Cada elemento li dentro del menú de navegación recibe un margen */
+nav ul li {
+    margin: 5px; /* Se asigna un margen de 5px a cada li */
+}
+  /* Se configura el estilo para los enlaces dentro del menú de navegación */
+nav ul li a {
+    color: white; /* Se establece el color del texto de los enlaces */
+    text-decoration: none; /* Se elimina el subrayado predeterminado de los enlaces */
+    padding: 10px 15px; /* Se agrega padding a los enlaces para mayor espacio */
+    display: block; /* Se hace que cada enlace se comporte como un bloque */
+    font-weight: bold; /* Se define que el texto de los enlaces sea negrita */
+    transition: background 0.3s; /* Se añade una transición suave al cambiar el fondo */
+}
+  /* Se define el efecto hover para los enlaces del menú */
+nav ul li a:hover {
+    background: rgb(207, 201, 189); /* Se cambia el fondo del enlace al pasar el cursor */
+    border-radius: 5px; /* Se redondean las esquinas del enlace durante el hover */
+}
+  /* El main se estiliza para centrar su contenido y disponerlo en columna */
+main {
+    padding: 20px; /* Se agrega padding interno al main */
+    display: flex; /* Se establece main como contenedor flexible */
+    flex-direction: column; /* Se organiza el contenido en una columna */
+    align-items: center; /* Se centra horizontalmente el contenido dentro del main */
+}
+  /* La clase "categoria" se utiliza para estilizar cada sección de productos */
+.categoria {
+    width: 90%; /* Se establece un ancho del 90% para cada categoría */
+    margin-bottom: 40px; /* Se agrega un margen inferior para separar las categorías */
+}
+  /* Se define un margen inferior para el título (h2) dentro de cada categoría */
+.categoria h2 {
+    margin-bottom: 10px; /* Se asigna un margen inferior de 10px al título */
+}
+  /* Los productos se muestran en una línea horizontal sin que se envuelvan */
+.productos {
+    display: flex; /* Se utiliza flexbox para organizar los productos */
+    flex-wrap:wrap;  /* Se evita que los productos se distribuyan en varias líneas */
+     /* Se permite el desplazamiento horizontal si hay más productos de los que caben */
+    gap: 4px; /* Se define un espacio de 20px entre cada producto */
+    padding-bottom: 10px; /* Se agrega padding inferior para mejorar la visualización del scroll */
+}
+  /* Cada producto se presenta como una tarjeta con ancho fijo y estilos definidos */
+.producto {
+    flex: 0 0 auto; /* Se evita que el producto se expanda, manteniendo un tamaño fijo */
+    width: 200px; /* Se asigna un ancho fijo de 200px a cada producto */
+    border: 1px solid #ddd; /* Se agrega un borde gris claro al producto */
+    padding: 15px; /* Se añade padding interno al producto */
+    text-align: center; /* Se centra el texto dentro de la tarjeta del producto */
+    border-radius: 10px; /* Se redondean las esquinas del producto */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Se aplica una sombra sutil para dar profundidad */
+    background: white; /* Se define un fondo blanco para el producto */
+    transition: transform 0.3s; /* Se añade una transición para el efecto de hover en el producto */
+}
+  /* Se define el efecto hover para cada producto, aumentando su tamaño ligeramente */
+.producto:hover {
+    transform: scale(1.05); /* Se aumenta la escala del producto al pasar el cursor */
+}
+  /* Las imágenes dentro de cada producto se ajustan al contenedor y se recortan adecuadamente */
+.producto img {
+    max-width: 100%; /* Se asegura que la imagen no exceda el ancho del contenedor */
+    border-radius: 10px; /* Se redondean las esquinas de la imagen */
+    height: 150px; /* Se establece una altura fija de 150px para la imagen */
+    object-fit: cover; /* Se hace que la imagen se recorte para llenar el contenedor sin distorsión */
+}
+  /* El footer se estiliza para tener un fondo oscuro, texto centrado y separación superior */
+footer {
+    background: #222; /* Se define el color de fondo del footer */
+    color: white; /* Se establece el color del texto en el footer */
+    text-align: center; /* Se centra el texto horizontalmente en el footer */
+    padding: 20px; /* Se añade padding interno al footer */
+    margin-top: 20px; /* Se agrega un margen superior para separar el footer del contenido */
+}
+  /* Se configuran los estilos para los enlaces de redes sociales dentro del footer */
+.redes a {
+    color: white; /* Se define el color del texto de los enlaces de redes sociales */
+    margin: 0 10px; /* Se asigna un margen horizontal de 10px a cada enlace */
+    font-size: 20px; /* Se establece el tamaño de fuente de los íconos en 20px */
+    text-decoration: none; /* Se elimina el subrayado de los enlaces */
+}
+
+/*Diseño responsivo con Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia el menú a una disposición vertical */
+        align-items: center;
+    }
+
+    .productos {
+        flex-wrap: wrap; /* Permite que los productos se acomoden en varias líneas en pantallas pequeñas */
+        justify-content: center;
+    }
+
+    .producto {
+        width: 100%; /* Hace que cada producto ocupe todo el ancho disponible */
+    }
+}
+
+.oculto {
+  display: none;
+}
